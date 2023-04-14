@@ -23,6 +23,6 @@ public class ExtremelyBasic {
     input.nextLine();
 
     int sum = number1 + number2;
-    System.out.println("X = " + sum);
+    System.out.println("X = " +  sum);
   }
 }
