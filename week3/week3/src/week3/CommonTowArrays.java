@@ -13,7 +13,7 @@ import java.util.Set;
  *
  * @author Eng Mohamed
  */
-public class CommonInTowArrays {
+public class CommonTowArrays {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         // git first array
@@ -26,10 +26,7 @@ public class CommonInTowArrays {
           System.out.println("enter number of elements of array ");
         int number2= input.nextInt();
         int [] array2= fillArray(number2);
-       
-         
-         
-         
+   
          Set<Integer> set1 = new HashSet<>();
          for(int i=0; i<array1.length; i++) set1.add(array1[i]);
          

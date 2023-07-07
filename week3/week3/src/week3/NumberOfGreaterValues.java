@@ -26,7 +26,9 @@ public class NumberOfGreaterValues {
          for(int i =0; i<number; i++)
          {
                     int element = input.nextInt();
-                    if(element>value) result++;
+                    if(element>value){
+                        result++;
+                    }
                     array[i]=element;
          
          }

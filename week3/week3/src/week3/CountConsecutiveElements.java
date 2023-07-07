@@ -18,27 +18,32 @@ public class CountConsecutiveElements {
         Scanner input = new Scanner(System.in);
 
         System.out.println("enter number of elements of array ");
-        int number1= input.nextInt();
-        int [] array = fillArrayFromUser(number1);
-        int count =0;
-        for (int i = 0; i < number1-1; i++) {
-            if(array[i]+1== array[i+1]) count++;
-        }
+        int elementNumber= input.nextInt();
+        int [] array = fillArrayFromUser(elementNumber);
+        int count = getCount(array, elementNumber);
+     
         System.out.println("Number of Consecutive elements is : " + count);
     }
-         public static int [] fillArrayFromUser(int number1){
+         public static int [] fillArrayFromUser(int arraySize){
         Scanner input = new Scanner(System.in);
        
-        int [] array1= new int [number1];
+        int [] array1= new int [arraySize];
         
          System.out.println("enter elements of array ");
-         for(int i =0; i<number1; i++)
+         for(int i =0; i<arraySize; i++)
          {
          int element = input.nextInt();
          array1[i]=element;
          }
          return array1;
     }
+         public static int getCount(int [] array , int elementNumber){
+         int count = 0 ;
+         for (int i = 0; i < elementNumber-1; i++) {
+            if(array[i]+1== array[i+1]) count++;
+        }
+         return count;
+         }
 }
 
 

@@ -9,7 +9,6 @@ import java.util.Scanner;
 public class Fibonacci {
        public static void main(String[] args) {
      Scanner input = new Scanner(System.in);
-     // 0 1 1 2 3 5 8 13 
         int number = input.nextInt();
         int Fibonacci0 =0;
         int Fibonacci1 =1;

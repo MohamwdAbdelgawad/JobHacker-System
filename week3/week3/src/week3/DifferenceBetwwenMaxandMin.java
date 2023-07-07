@@ -17,11 +17,11 @@ public class DifferenceBetwwenMaxandMin {
           Scanner input = new Scanner(System.in);
 
         System.out.println("enter number of elements of array ");
-        int number1= input.nextInt();
+        int arraySize= input.nextInt();
         
-        int [] array = fillArrayFromUser(number1);
+        int [] array = fillArrayFromUser(arraySize);
         Arrays.sort(array);
-        System.out.println("Difference between min and max is : " + (array[number1-1] - array[0]));
+        System.out.println("Difference between min and max is : " + (array[arraySize-1] - array[0]));
     }
          public static int [] fillArrayFromUser(int number1){
         Scanner input = new Scanner(System.in);

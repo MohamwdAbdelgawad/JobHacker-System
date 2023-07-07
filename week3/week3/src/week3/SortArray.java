@@ -22,12 +22,12 @@ public class SortArray {
          public static int [] fillArrayFromUser(){
         Scanner input = new Scanner(System.in);
           System.out.println("enter number of elements of array ");
-        int number1= input.nextInt();
+        int arraySize= input.nextInt();
         
-        int [] array1= new int [number1];
+        int [] array1= new int [arraySize];
         
          System.out.println("enter elements of array ");
-         for(int i =0; i<number1; i++)
+         for(int i =0; i<arraySize; i++)
          {
          int element = input.nextInt();
          array1[i]=element;
