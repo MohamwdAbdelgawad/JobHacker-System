@@ -23,7 +23,6 @@ public class WordsCount {
                     "we here highly resolve that these dead shall not have died in vain -- that this nation, under God, shall have a new\n" +
                     "birth of freedom -- and that government of the people, by the people, for the people, shall not perish from the earth.";
             fos.write(content.getBytes());
-            System.out.println("File created and content written successfully!");
         } catch (IOException e) {
             e.printStackTrace();
         }
